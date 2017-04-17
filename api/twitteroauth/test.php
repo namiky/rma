@@ -1,0 +1,18 @@
+<?php
+// €”õ
+require_once('twitteroauth.php');
+$consumer_key = 'i06e6MTJChd1FvrEh7HJ5g';
+$consumer_secret = 'QllZUaxYKBuZkIgLHOmnNBuPqXBiKG0Ee3aVLZDbYc';
+$access_token = '1023958974-PGNLQvWwJ4byRTZhIK4wXBKWRXBcWs7VpC62sXF';
+$access_token_secret = 'gXnG0WiirucpJ5cAJKGKbdwmnNQA6PhhD7S1HLK444';
+$message = '‰‚ß‚Ü‚µ‚ÄBPHP‚©‚ç™ê‚«‚ð“Še‚µ‚Ä‚Ý‚Ü‚µ‚½(*LÞM*)';
+
+// OAuth”FØ
+$twitter = new TwitterOAuth($consumer_key
+    ,$consumer_secret, $access_token, $access_token_secret);
+
+// ƒƒbƒZ[ƒW‚ð“Še‚·‚é
+$twitter->format = 'xml';
+$tweet = $twitter->post('statuses/update', array('status' => $message));
+echo $tweet;
+?>

@@ -1,0 +1,29 @@
+各ファイル・APIを使用するPHPファイル
+
+■BingSearch
+BingSearchAPIについてのPHPを格納したファイル
+・index.php
+	メインとなるPHPファイル
+・search.php
+	機能となるPHP
+	
+■flickr
+FlickrAPIについてのPHPを格納したファイル
+・index.php
+	メインとなるPHPファイル
+
+■twittroauth
+TwitterAPIについてのPHPを格納したファイル
+・tl.php
+	タイムラインを表示するPHPファイル
+・tweet.php
+	Tweetを実行するPHPファイル
+
+
+■wikipedia
+WikipediaAPIについてのPHPを格納したファイル
+・sample1.php
+	メインとなるPHPファイル
+
+・sample2.php
+	sample1.phpの改良版。表示数を１つに変更し表示を見やすくしたPHPファイル

@@ -1,0 +1,11 @@
+・data_history.php
+	DBから履歴情報を取得する
+
+・data_item.php
+	DBから商品情報を取得する
+
+・data_member.php
+	DBからアカウント情報を取得する
+
+・graph.php
+	GoogleVisualizationAPIを用いてグラフを作成するPHPファイル

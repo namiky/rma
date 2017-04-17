@@ -1,0 +1,173 @@
+@charset "utf-8";
+body {
+  background: url(img/bg.jpg);
+  font: 14px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: none;
+}
+table{
+  background-color:white;
+  color:black;
+}
+
+#pageslide {
+  /* These styles MUST be included. Do not change. */
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  /* Specify the width of your pageslide here */
+  width: 260px;
+  padding: 20px;
+  /* These styles are optional, and describe how the pageslide will look */
+  background: #333 url(img/left-bg.jpg);
+  color: #FFF;
+  -webkit-box-shadow: inset 0 0 5px 5px #222;
+  -moz-shadow: inset 0 0 5px 5px #222;
+  box-shadow: inset 0 0 5px 5px #222;
+}
+a, a:visited {
+  color: #C30;
+  text-decoration: none;
+}
+a:hover {
+  color: #900;
+  border-bottom-style: solid;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 940px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.content h1 {
+  color: #eee;
+  line-height: 1em;
+}
+
+ul#nav {
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 40px;
+}
+ul#nav:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.content ul#nav li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.content ul#nav a {
+  display: block;
+  background: #eee;
+  color: #555;
+  font-weight: bold;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+.content ul#nav a:hover {
+  background: #bcb5b1;
+}
+
+.psLeft {
+  display: none;
+  float: left;
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+  background: url(img/menu.png) center center no-repeat #333;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -border-radius: 8px;
+  box-shadow: inset 0 0 3px #000;
+  text-indent: -999999px;
+  border: 0;
+}
+/*追加分*/
+#help {
+  display: none;
+}
+#help a {
+  background: #CCC;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+}
+#help a:hover {
+  background: #aaa;
+}
+/*追加分*/
+
+
+/* Media Queries
+ *
+ * Note: Please don't base your responsive design off of this code. It is just here for demo purposes.
+ * Rather, grab yourself a copy of Ethan's book: http://www.abookapart.com/products/responsive-web-design
+ ================================================== */
+
+/* Mobile and iPad Portrait */
+@media only screen and (max-width: 959px) {
+  .content {
+    width: 748px;
+  }
+}
+
+/* Mobile Landscape and Portrait */
+@media only screen and (max-width: 767px) {
+  .content {
+    width: 400px;
+  }
+  .content h1 {
+    font-size: 22px;
+    line-height: 30px;
+    background-color: #eee;
+    color: #333;
+    padding: 10px;
+  }
+  .content ul#nav {
+    display: none;
+  }
+
+  .psLeft {
+    display: block;
+  }
+  #pageslide {
+    width: 200px;
+  }
+  #pageslide #nav li {
+    padding: 10px 0;
+    border-bottom: 1px solid #666;
+  }
+  #pageslide #nav li a {
+    color: #FFF;
+    border: none;
+  }
+  #pageslide #nav li a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Mobile Portrait */
+@media only screen and (max-width: 479px) {
+  .content {
+    width: 280px;
+  }
+  .content h1 {
+    font-size: 14px;
+  }
+}
